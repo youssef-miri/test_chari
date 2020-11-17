@@ -16,8 +16,9 @@ class CreateCommandesTable extends Migration
         Schema::create('commandes', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('id_client')->unsigned()->nullable();
+            $table->string('token');
             $table->string('date');
-            $table->integer('total');
+            $table->float('total');
             $table->foreign('id_client')->references('id')->on('clients')->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });

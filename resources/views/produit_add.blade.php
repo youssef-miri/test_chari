@@ -31,6 +31,16 @@
                             @endforeach
                           </select>
                     </p>
+                    <p class="row-in-form">
+                        <label for="categorie">TVA<span>*</span></label>
+                        <select class="form-control" name="tva" id="categorie">
+                            <option value="0" disabled="true" selected="true">TVA</option>
+                                <option value="0">0%</option>
+                                <option value="7">7%</option>
+                                <option value="10">10%</option>
+                                <option value="20">20%</option>
+                        </select>
+                    </p>
                     <input type="submit" value="Ajouter" class="btn btn-medium"/>
                 </form>
             </div>

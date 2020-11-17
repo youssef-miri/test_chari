@@ -84,6 +84,9 @@
                                 <a href="{{ route('cart')}}" class="link-term mercado-item-title">Chariot</a>
                             </li>
                             <li class="menu-item">
+                                <a href="{{ route('listcomd')}}" class="link-term mercado-item-title">Commande</a>
+                            </li>
+                            <li class="menu-item">
                                 <a href="{{ route('checkout')}}" class="link-term mercado-item-title">Check-out</a>
                             </li>
                         </ul>

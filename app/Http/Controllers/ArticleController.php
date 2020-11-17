@@ -29,6 +29,7 @@ class ArticleController extends Controller
         $prod->pu=$request->input('pu');
         $prod->qte=$request->input('qte');
         $prod->id_cat=$request->get('id_cat');
+        $prod->tva=$request->get('tva');
         $prod->save();
         return redirect()->route('listproduit')->with('status', 'add successfuly!');
     }

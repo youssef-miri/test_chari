@@ -17,9 +17,14 @@ class CreateLignecommandesTable extends Migration
             $table->increments('id');
             $table->integer('id_comd')->unsigned()->nullable();
             $table->integer('id_art')->unsigned()->nullable();
+            $table->string('libelle_art');
             $table->integer('pu');
+            $table->integer('pourcentage')->nullable();
+            $table->integer('pr');
             $table->integer('qte');
-            $table->integer('total');
+            $table->integer('tva');
+            $table->float('prix_tva');
+            $table->float('total_ttc');
             $table->foreign('id_comd')->references('id')->on('commandes')->onUpdate('cascade')->onDelete('cascade');
             $table->foreign('id_art')->references('id')->on('articles')->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();

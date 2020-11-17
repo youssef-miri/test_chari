@@ -19,6 +19,7 @@ class CreateArticlesTable extends Migration
             $table->string('libelle');
             $table->integer('pu');
             $table->integer('qte');
+            $table->integer('tva');
             $table->integer('id_cat')->unsigned()->nullable();
             $table->foreign('id_cat')->references('id')->on('categories')->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();

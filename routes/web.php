@@ -37,4 +37,5 @@ Route::post('promproduit/add','PromoproduitController@AddPromproduitPost')->name
 Route::get('promproduit/{id}/del','PromoproduitController@delPromproduit')->name('delpromproduit');
 //=====================================================
 Route::post('comd/add','CommandeController@addcomdpost')->name('addcomdpost.post');
-Route::get('comd/{idCl}/detail','CommandeController@DetailComd')->name('admin.home');
+Route::get('comd/list','CommandeController@listcomd')->name('listcomd');
+Route::get('comd/{id}/detail','CommandeController@detailcomd')->name('detailcomd');
